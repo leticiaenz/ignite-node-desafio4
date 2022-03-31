@@ -28,6 +28,8 @@ class UsersRepository implements IUsersRepository {
     });
 
     this.users.push(user);
+
+    return user;
   }
 
   findById(id: string): User | undefined {
